@@ -1,7 +1,7 @@
 # TornSharp
 [![NuGet version](https://badge.fury.io/nu/TornSharp.svg)](https://badge.fury.io/nu/TornSharp)
 
-A C# Wrapper for [Torn City API](https://www.torn.com/api.html) based on the now depreciated wrapper by CarlHalstead.
+A C# Wrapper for the [Torn City API](https://www.torn.com/api.html) based on the now depreciated wrapper by CarlHalstead.
 
 ## Features
 - Asynchronous Calls
