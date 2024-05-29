@@ -47,7 +47,19 @@ catch (Exception e)
   // Handle the exception
 }
 ```
-These are the current endpoint category available:
+Note: calls require matching the method to the associated endpoint category <br />
+Ex. For torn calls you must do:
+```c#
+//example: Getting Torn education
+var education = api.GetFromTornApi<TornEducation>().Result;
+```
+instead of
+```c#
+//will not work
+var education = api.GetFromUserApi<TornEducation>().Result;
+```
+
+These are the current endpoint categories available:
 * User
 * Property
 * Faction
@@ -56,7 +68,7 @@ These are the current endpoint category available:
 * Torn
 * Key
 
-All endpoints can be found on the [Unofficial Torn Api](https://tornapi.tornplayground.eu/).
+More details on endpoints can be found on the [Unofficial Torn Api](https://tornapi.tornplayground.eu/).
 
 ## Notes
 - Some endpoints/types are incomplete due to unknown variable types/enum types
@@ -65,7 +77,7 @@ All endpoints can be found on the [Unofficial Torn Api](https://tornapi.tornplay
 These problems are mostly due to incomplete/unknown data from the unofficial documentation.<br />
 
 If any of these problems above occur you can open an issue [here](https://github.com/YuumiPie/TornCitySharp/issues).<br />
-(please report unknown/incomplete data to the Unofficial Torn Api as well)!
+(Please report unknown/incomplete data to the Unofficial Torn Api as well)!
 
 ## Contributing
 
