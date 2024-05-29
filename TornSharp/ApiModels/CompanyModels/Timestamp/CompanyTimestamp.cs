@@ -1,10 +1,9 @@
 using System.Text.Json.Serialization;
-using TornSharp.ApiModels.TornModels;
 using TornSharp.CustomJsonConverter;
 
 namespace TornSharp.ApiModels.CompanyModels.Timestamp;
 
-public class CompanyTimestamp : JsonModel, ITornStats
+public class CompanyTimestamp : JsonModel, ICompanyStatistics
 {
     [JsonPropertyName("timestamp")]
     [JsonConverter(typeof(UnixDateTimeConverter))]

@@ -1,5 +1,4 @@
 using System.Text.Json.Serialization;
-using TornSharp.ApiModels.CompanyModels.Companies;
 
 namespace TornSharp.ApiModels.CompanyModels.Profile;
 

@@ -1,5 +1,4 @@
 using System.Text.Json.Serialization;
-using TornSharp.ApiModels.PropertyModels;
 using TornSharp.CustomJsonConverter;
 
 namespace TornSharp.ApiModels.MarketModels.Timestamp;
@@ -12,6 +11,6 @@ public class PropertyTimestamp : JsonModel, IMarketStatistics
 
     public string GetMethodName()
     {
-        return PropertyMethods.timestamp.ToString();
+        return MarketMethods.timestamp.ToString();
     }
 }

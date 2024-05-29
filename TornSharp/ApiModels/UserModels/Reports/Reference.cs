@@ -1,5 +1,4 @@
 using System.Text.Json.Serialization;
-using TornSharp.ApiModels;
 
 namespace TornSharp.ApiModels.UserModels.Reports;
 

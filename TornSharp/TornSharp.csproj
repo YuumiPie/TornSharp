@@ -14,8 +14,8 @@
         <RepositoryType>git</RepositoryType>
         <Copyright>Copyright (c) YuumiPie 2024-2024</Copyright>
         <PackageTags>TornCity Wrapper</PackageTags>
-        <Version>1.0.1.1</Version>
-        <PackageReleaseNotes>Added nuget to README.md</PackageReleaseNotes>
+        <Version>1.0.1.2-beta</Version>
+        <PackageReleaseNotes>Fixed models using eachother's submodels</PackageReleaseNotes>
     </PropertyGroup>
 
     <ItemGroup>

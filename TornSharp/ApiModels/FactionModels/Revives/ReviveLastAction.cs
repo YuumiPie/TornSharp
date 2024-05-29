@@ -1,5 +1,4 @@
 using System.Text.Json.Serialization;
-using TornSharp.ApiModels.UserModels.Profile;
 using TornSharp.CustomJsonConverter;
 
 namespace TornSharp.ApiModels.FactionModels.Revives;
