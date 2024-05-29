@@ -2,6 +2,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using TornSharp.Exceptions;
+using TornSharp.JsonDeserializerOptions;
 
 namespace TornSharp.Utils;
 
@@ -13,6 +14,7 @@ public class ObjectFromUrl
     public ObjectFromUrl()
     {
         options.Converters.Add(new JsonStringEnumConverterWithAttributeSupport());
+        options.Converters.Add(new NullableConverterFactory());
     }
 
     public async Task<T> GetObject<T>(string url)

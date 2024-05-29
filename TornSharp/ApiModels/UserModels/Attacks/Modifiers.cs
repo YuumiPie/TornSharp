@@ -2,7 +2,6 @@ using System.Text.Json.Serialization;
 
 namespace TornSharp.ApiModels.UserModels.Attacks;
 
-[JsonConverter(typeof(JsonStringEnumConverter))]
 public class Modifiers : JsonModel
 {
     [JsonPropertyName("chain_bonus")]
