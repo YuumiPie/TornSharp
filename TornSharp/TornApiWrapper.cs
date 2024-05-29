@@ -1,4 +1,5 @@
-﻿using TornSharp.ApiModels.CompanyModels;
+﻿using System.Collections;
+using TornSharp.ApiModels.CompanyModels;
 using TornSharp.ApiModels.FactionModels;
 using TornSharp.ApiModels.KeyModels;
 using TornSharp.ApiModels.MarketModels;
@@ -206,7 +207,17 @@ public class TornApiWrapper
 
         try
         {
-            dataLogger.LogMissingFields(response);
+            if (response is IEnumerable enumerable)
+            {
+                foreach (var subModel in enumerable)
+                {
+                    dataLogger.LogMissingFields(subModel);
+                }
+            }
+            else
+            {
+                dataLogger.LogMissingFields(response);
+            }
         }
         catch (Exception ex)
         {

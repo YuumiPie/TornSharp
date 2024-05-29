@@ -26,6 +26,15 @@ public class JsonDataLogger
                 }
                 break;
             }
+            case IEnumerable<JsonModel> jsonModels:
+            {
+                foreach (JsonModel jsnMdl in jsonModels)
+                {
+                    LogMissingFields(jsnMdl);
+                }
+
+                break;
+            }
             default:
             {
                 PropertyInfo[] properties = model.GetType().GetProperties(BindingFlags.Instance | BindingFlags.Public);
