@@ -29,7 +29,7 @@ public class Company : JsonModel
     public int Id { get; set; }
 
     [JsonPropertyName("name")]
-    public int Name { get; set; }
+    public string Name { get; set; }
 
     [JsonPropertyName("rating")]
     public int Rating { get; set; }

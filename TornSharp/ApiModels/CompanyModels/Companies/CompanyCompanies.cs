@@ -4,7 +4,7 @@ namespace TornSharp.ApiModels.CompanyModels.Companies;
 
 public class CompanyCompanies : JsonModel, ICompanyStatistics
 {
-    [JsonPropertyName("cards")]
+    [JsonPropertyName("company")]
     public Dictionary<int, Company> Companies { get; set; }
 
     public string GetMethodName()
