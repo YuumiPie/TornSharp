@@ -14,8 +14,8 @@
         <RepositoryType>git</RepositoryType>
         <Copyright>Copyright (c) YuumiPie 2024-2024</Copyright>
         <PackageTags>TornCity Wrapper</PackageTags>
-        <Version>1.0.1.2-beta</Version>
-        <PackageReleaseNotes>Fixed models using eachother's submodels</PackageReleaseNotes>
+        <Version>1.0.2</Version>
+        <PackageReleaseNotes>Fixed errors on Json property logging</PackageReleaseNotes>
     </PropertyGroup>
 
     <ItemGroup>
