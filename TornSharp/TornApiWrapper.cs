@@ -72,7 +72,7 @@ public class TornApiWrapper
     /// <typeparam name="T">Object that implements IFactionStatistics</typeparam>
     /// <param name="factionId">Id of the faction or "" for user faction</param>
     /// <returns>Object containing response of type T</returns>
-    public async Task<T> GetFromFactionApi<T>(string factionId) where T : IFactionStatistics, new()
+    public async Task<T> GetFromFactionApi<T>(string factionId = "") where T : IFactionStatistics, new()
     {
         T method = new();
         string url = $"{urlBase}{Fields.Faction.GetEnumMemberValue()}/{factionId}?selections={method.GetMethodName()}&key={apiKey.ApiKey}";
@@ -87,7 +87,7 @@ public class TornApiWrapper
     /// <typeparam name="T">Object implementing IPropertyStatistics interface</typeparam>
     /// <param name="propertyId">A Property Id</param>
     /// <returns>Object of type T</returns>
-    public async Task<T> GetFromPropertyApi<T>(string propertyId) where T : IPropertyStatistics, new()
+    public async Task<T> GetFromPropertyApi<T>(string propertyId = "") where T : IPropertyStatistics, new()
     {
         T method = new();
         if (string.IsNullOrWhiteSpace(propertyId))
@@ -108,7 +108,7 @@ public class TornApiWrapper
     /// <typeparam name="T">Object implementing ICompanyStatistics interface</typeparam>
     /// <param name="companyId">A company Id</param>
     /// <returns>Object of type T</returns>
-    public async Task<T> GetFromCompanyApi<T>(string companyId) where T : ICompanyStatistics, new()
+    public async Task<T> GetFromCompanyApi<T>(string companyId = "") where T : ICompanyStatistics, new()
     {
         T method = new();
 
@@ -125,7 +125,7 @@ public class TornApiWrapper
     /// <typeparam name="T">Object implementing IMarketStatistics interface</typeparam>
     /// <param name="itemId">An item Id</param>
     /// <returns>Object of type T</returns>
-    public async Task<T> GetFromMarketApi<T>(string itemId) where T : IMarketStatistics, new()
+    public async Task<T> GetFromMarketApi<T>(string itemId = "") where T : IMarketStatistics, new()
     {
         T method = new();
 
@@ -142,7 +142,7 @@ public class TornApiWrapper
     /// <typeparam name="T">Object implementing IUserStatistics interface</typeparam>
     /// <param name="userId">A user Id</param>
     /// <returns>Object of type T</returns>
-    public async Task<T> GetFromUserApi<T>(string? userId = null) where T : IUserStatistics, new()
+    public async Task<T> GetFromUserApi<T>(string userId = "") where T : IUserStatistics, new()
     {
         T method = new();
 
@@ -159,7 +159,7 @@ public class TornApiWrapper
     /// <typeparam name="T">Object implementing ITornStats interface</typeparam>
     /// <param name="parameter">Could be an item number, honor number depending on the api that is beeing called</param>
     /// <returns>Object of type T</returns>
-    public async Task<T> GetFromTornApi<T>(string parameter) where T : ITornStats, new()
+    public async Task<T> GetFromTornApi<T>(string parameter = "") where T : ITornStats, new()
     {
         T method = new();
 
@@ -176,7 +176,7 @@ public class TornApiWrapper
     /// <typeparam name="T">Object implementing IKeyStatistics interface</typeparam>
     /// <param name="parameter">Could be an item number, honor number depending on the api that is beeing called</param>
     /// <returns>Object of type T</returns>
-    public async Task<T> GetFromKeyApi<T>(string parameter) where T : IKeyStatistics, new()
+    public async Task<T> GetFromKeyApi<T>(string parameter = "") where T : IKeyStatistics, new()
     {
         T method = new();
 
