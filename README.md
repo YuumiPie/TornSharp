@@ -3,12 +3,12 @@
 
 A C# Wrapper for [Torn City API](https://www.torn.com/api.html) based on the now depreciated wrapper by CarlHalstead.
 
-### Features
+## Features
 - Asynchronous Calls
 - Support for most endpoints
 - Logging unknown Json properties
 
-### Installation
+## Installation
 Install RiotSharp through NuGet:
 ```
 PM> Install-Package TornSharp   
