@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TornSharp", "TornSharp\TornSharp.csproj", "{87370D99-E841-4CBB-BF0E-E302C8DBFA72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TornSharp.Tests", "TornSharp.Tests\TornSharp.Tests.csproj", "{6B6D39DC-71CA-4D87-B712-F04DB4360C87}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87370D99-E841-4CBB-BF0E-E302C8DBFA72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87370D99-E841-4CBB-BF0E-E302C8DBFA72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87370D99-E841-4CBB-BF0E-E302C8DBFA72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87370D99-E841-4CBB-BF0E-E302C8DBFA72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B6D39DC-71CA-4D87-B712-F04DB4360C87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B6D39DC-71CA-4D87-B712-F04DB4360C87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B6D39DC-71CA-4D87-B712-F04DB4360C87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B6D39DC-71CA-4D87-B712-F04DB4360C87}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
