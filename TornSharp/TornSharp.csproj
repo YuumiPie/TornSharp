@@ -14,8 +14,8 @@
         <RepositoryType>git</RepositoryType>
         <Copyright>Copyright (c) YuumiPie 2024-2024</Copyright>
         <PackageTags>TornCity Wrapper</PackageTags>
-        <Version>1.0.2</Version>
-        <PackageReleaseNotes>Fixed errors on Json property logging</PackageReleaseNotes>
+        <Version>1.0.3</Version>
+        <PackageReleaseNotes>Added deserializing empty json strings to null</PackageReleaseNotes>
     </PropertyGroup>
 
     <ItemGroup>
