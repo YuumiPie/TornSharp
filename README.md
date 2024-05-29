@@ -1,10 +1,18 @@
 # TornSharp
+[![NuGet version](https://badge.fury.io/nu/TornSharp.svg)](https://badge.fury.io/nu/TornSharp)
+
 A C# Wrapper for [Torn City API](https://www.torn.com/api.html) based on the now depreciated wrapper by CarlHalstead.
 
-### Features:
+### Features
 - Asynchronous Calls
 - Support for most endpoints
 - Logging unknown Json properties
+
+### Installation
+Install RiotSharp through NuGet:
+```
+PM> Install-Package TornSharp   
+```
 
 ## Usage
 You first have to create API key [here](https://www.torn.com/preferences.php#tab=api).

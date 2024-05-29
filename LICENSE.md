@@ -175,4 +175,4 @@
 
    END OF TERMS AND CONDITIONS
 
-   Copyright 2024 jjjeremy
+   Copyright 2024 YuumiPie

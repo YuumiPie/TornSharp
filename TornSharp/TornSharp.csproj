@@ -6,14 +6,16 @@
         <Nullable>enable</Nullable>
         <RootNamespace>TornSharp</RootNamespace>
         <Title>TornSharp</Title>
-        <Authors>jjjeremy</Authors>
+        <Authors>YuumiPie</Authors>
         <Description>A C# wrapper for the Torn City api</Description>
         <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-        <PackageProjectUrl>https://github.com/jjjeremy/TornSharp</PackageProjectUrl>
-        <PackageLicenseUrl>https://github.com/jjjeremy/TornSharp/blob/develop/LICENSE.md</PackageLicenseUrl>
+        <PackageProjectUrl>https://github.com/YuumiPie/TornSharp</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/YuumiPie/TornSharp/blob/develop/LICENSE.md</PackageLicenseUrl>
         <RepositoryType>git</RepositoryType>
-        <Copyright>Copyright (c) jjjeremy 2024-2024</Copyright>
+        <Copyright>Copyright (c) YuumiPie 2024-2024</Copyright>
         <PackageTags>TornCity Wrapper</PackageTags>
+        <Version>1.0.1.1</Version>
+        <PackageReleaseNotes>Added nuget to README.md</PackageReleaseNotes>
     </PropertyGroup>
 
     <ItemGroup>
