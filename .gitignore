@@ -456,3 +456,6 @@ $RECYCLE.BIN/
 !.vscode/extensions.json
 
 TornSharp.Tests/
+
+!/TornSharp/ApiModels/UserModels/Properties/
+!/TornSharp/ApiModels/UserModels/Log/
