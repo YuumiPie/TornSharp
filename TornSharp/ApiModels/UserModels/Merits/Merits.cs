@@ -77,7 +77,7 @@ public class Merits : JsonModel
     public int SlashingMastery { get; set; }
 
     [JsonPropertyName("SMG Mastery")]
-    public int SMGMastery { get; set; }
+    public int SmgMastery { get; set; }
 
     [JsonPropertyName("Stealth")]
     public int Stealth { get; set; }

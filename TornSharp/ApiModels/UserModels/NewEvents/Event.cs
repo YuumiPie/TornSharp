@@ -10,7 +10,7 @@ public class Event : JsonModel
 
     [JsonPropertyName("seen")]
     [JsonConverter(typeof(BoolConverter))]
-    public bool seen { get; set; }
+    public bool Seen { get; set; }
 
     [JsonPropertyName("timestamp")]
     [JsonConverter(typeof(UnixDateTimeConverter))]

@@ -6,6 +6,9 @@ public class UserPerks : JsonModel, IUserStats
 {
     [JsonPropertyName("job_perks")]
     public List<string> JobPerks { get; set; }
+    
+    [JsonPropertyName("book_perks")]
+    public List<string> BookPerks { get; set; }
 
     [JsonPropertyName("property_perks")]
     public List<string> PropertyPerks { get; set; }

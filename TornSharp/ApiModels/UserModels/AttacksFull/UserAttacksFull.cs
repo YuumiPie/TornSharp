@@ -4,8 +4,8 @@ namespace TornSharp.ApiModels.UserModels.AttacksFull;
 
 public class UserAttacksFull : JsonModel, IUserStats
 {
-    [JsonPropertyName("attacksfull")]
-    Dictionary<int, AttackFull> AttacksFull { get; set; }
+    [JsonPropertyName("attacks")]
+    public Dictionary<int, AttackFull> AttacksFull { get; set; }
 
     public string GetMethodName()
     {

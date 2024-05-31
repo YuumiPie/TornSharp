@@ -11,7 +11,7 @@ public enum MissionStatus
     [EnumMember(Value = "completed")]
     Completed,
     [EnumMember(Value = "failed")]
-    Dailed,
+    Failed,
     [EnumMember(Value = "notAccepted")]
     NotAccepted,
 }

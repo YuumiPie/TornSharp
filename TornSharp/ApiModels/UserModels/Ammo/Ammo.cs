@@ -22,5 +22,5 @@ public class Ammo : JsonModel
     public string Type { get; set; }
 
     [JsonPropertyName("typeID")]
-    public int TypeID { get; set; }
+    public int TypeId { get; set; }
 }

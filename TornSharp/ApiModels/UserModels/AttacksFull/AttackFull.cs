@@ -24,7 +24,7 @@ public class AttackFull : JsonModel
     public double Respect { get; set; }
 
     [JsonPropertyName("result")]
-    public Attacks.AttackResult Result { get; set; }
+    public AttackResult Result { get; set; }
 
     [JsonPropertyName("stealthed")]
     [JsonConverter(typeof(BoolConverter))]

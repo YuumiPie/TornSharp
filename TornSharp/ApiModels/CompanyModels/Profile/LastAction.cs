@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using TornSharp.CustomJsonConverter;
 
 namespace TornSharp.ApiModels.CompanyModels.Profile;
 
@@ -11,6 +12,6 @@ public class LastAction : JsonModel
     public LastActionStatus Status { get; set; }
 
     [JsonPropertyName("timestamp")]
-    [JsonConverter(typeof(DateTime))]
+    [JsonConverter(typeof(UnixDateTimeConverter))]
     public DateTime? Timestamp { get; set; }
 }

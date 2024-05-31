@@ -8,5 +8,5 @@ public class Ranking : JsonModel
     public int Rank { get; set; }
 
     [JsonPropertyName("value")]
-    public int Value { get; set; }
+    public long Value { get; set; }
 }

@@ -5,7 +5,7 @@ namespace TornSharp.ApiModels.UserModels.Travel;
 
 public class Travel : JsonModel
 {
-    [JsonPropertyName("Departed")]
+    [JsonPropertyName("departed")]
     [JsonConverter(typeof(UnixDateTimeConverter))]
     public DateTime Departed { get; set; }
 

@@ -4,8 +4,8 @@ namespace TornSharp.ApiModels.UserModels.Missions;
 
 public class UserMissions : JsonModel, IUserStats
 {
-    [JsonPropertyName("Duke")]
-    public List<Mission> Duke { get; set; }
+    [JsonPropertyName("missions")]
+    public Missions Missions { get; set; }
 
     public string GetMethodName()
     {

@@ -57,6 +57,9 @@ public class Networth : JsonModel
 
     [JsonPropertyName("total")]
     public long Total { get; set; }
+    
+    [JsonPropertyName("trade")]
+    public int Trade { get; set; }
 
     [JsonPropertyName("unpaidfees")]
     public int Unpaidfees { get; set; }

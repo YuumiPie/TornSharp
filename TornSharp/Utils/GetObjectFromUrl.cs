@@ -16,7 +16,6 @@ public class ObjectFromUrl
         options.Converters.Add(new JsonStringEnumConverterWithAttributeSupport());
         options.Converters.Add(new NullableConverterFactory());
         options.Converters.Add(new BracketEmptyArrayConverter());
-        options.Converters.Add(new BlankStringToNumberConverter());
         options.Converters.Add(new NumberToStringConverter());
     }
 
