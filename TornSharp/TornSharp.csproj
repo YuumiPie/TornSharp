@@ -14,8 +14,8 @@
         <RepositoryType>git</RepositoryType>
         <Copyright>Copyright (c) YuumiPie 2024-2024</Copyright>
         <PackageTags>TornCity Wrapper</PackageTags>
-        <Version>1.0.4</Version>
-        <PackageReleaseNotes>Fixed most errors in api models</PackageReleaseNotes>
+        <Version>1.0.5</Version>
+        <PackageReleaseNotes>Fixed missing/mistyped properties in some models</PackageReleaseNotes>
     </PropertyGroup>
 
     <ItemGroup>
