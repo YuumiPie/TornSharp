@@ -16,5 +16,5 @@ public class Bonus : JsonModel
 
     [JsonPropertyName("ready")]
     [JsonConverter(typeof(BoolConverter))]
-    public string Ready { get; set; }
+    public bool Ready { get; set; }
 }

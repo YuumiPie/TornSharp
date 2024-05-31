@@ -5,7 +5,7 @@ namespace TornSharp.ApiModels.TornModels.RankedWarReport;
 public class Rewards : JsonModel
 {
     [JsonPropertyName("items")]
-    public Dictionary<string, Item> Items { get; set; }
+    public Dictionary<int, Item> Items { get; set; }
 
     [JsonPropertyName("points")]
     public int Points { get; set; }

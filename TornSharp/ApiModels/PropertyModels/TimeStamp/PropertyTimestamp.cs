@@ -3,7 +3,7 @@ using TornSharp.CustomJsonConverter;
 
 namespace TornSharp.ApiModels.PropertyModels.TimeStamp;
 
-public class PropertyTimestamp : JsonModel, IPropertyStatistics
+public class PropertyTimestamp : JsonModel, IPropertyStats
 {
     [JsonPropertyName("timestamp")]
     [JsonConverter(typeof(UnixDateTimeConverter))]

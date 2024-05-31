@@ -2,10 +2,10 @@ using System.Text.Json.Serialization;
 
 namespace TornSharp.ApiModels.UserModels.NewMessages;
 
-public class UserNewMessages : JsonModel, IUserStatistics
+public class UserNewMessages : JsonModel, IUserStats
 {
     [JsonPropertyName("messages")]
-    public Dictionary<string, Message> Messages { get; set; }
+    public Dictionary<int, Message> Messages { get; set; }
 
     [JsonPropertyName("player_id")]
     public int PlayerId { get; set; }

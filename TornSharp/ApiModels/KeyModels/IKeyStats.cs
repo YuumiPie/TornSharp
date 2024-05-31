@@ -1,6 +1,6 @@
 ﻿namespace TornSharp.ApiModels.KeyModels;
 
-public interface IKeyStatistics
+public interface IKeyStats
 {
     string GetMethodName();
 }

@@ -2,10 +2,10 @@ using System.Text.Json.Serialization;
 
 namespace TornSharp.ApiModels.FactionModels.RevivesFull;
 
-public class FactionRevivesFull : JsonModel, IFactionStatistics
+public class FactionRevivesFull : JsonModel, IFactionStats
 {
     [JsonPropertyName("revives")]
-    public Dictionary<string, RevivesFull> RevivesFull { get; set; }
+    public Dictionary<int, RevivesFull> RevivesFull { get; set; }
 
     public string GetMethodName()
     {

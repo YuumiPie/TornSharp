@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace TornSharp.ApiModels.FactionModels.Stats;
 
-public class FactionStats : JsonModel, IFactionStatistics
+public class FactionStats : JsonModel, IFactionStats
 {
     [JsonPropertyName("stats")]
     public Stats Stats { get; set; }

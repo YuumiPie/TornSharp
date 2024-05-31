@@ -5,7 +5,7 @@ namespace TornSharp.ApiModels.TornModels.RankedWars;
 public class TornRankedWars : JsonModel, ITornStats
 {
     [JsonPropertyName("rankedwars")]
-    public Dictionary<string, RankedWar> RankedWars { get; set; }
+    public Dictionary<int, RankedWar> RankedWars { get; set; }
 
     public string GetMethodName()
     {

@@ -1,6 +1,6 @@
 ﻿namespace TornSharp.ApiModels.PropertyModels;
 
-public interface IPropertyStatistics
+public interface IPropertyStats
 {
     string GetMethodName();
 }

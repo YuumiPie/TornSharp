@@ -2,7 +2,7 @@
 
 namespace TornSharp.ApiModels.UserModels.Notifications;
 
-public class UserNotifications : JsonModel, IUserStatistics
+public class UserNotifications : JsonModel, IUserStats
 {
     [JsonPropertyName("notifications")]
     public Notifications Notifications { get; set; }

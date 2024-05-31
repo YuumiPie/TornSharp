@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace TornSharp.ApiModels.FactionModels.ChainReport;
 
-public class FactionChainReport : JsonModel, IFactionStatistics
+public class FactionChainReport : JsonModel, IFactionStats
 {
     [JsonPropertyName("chainreport")]
     public ChainReport ChainReport { get; set; }

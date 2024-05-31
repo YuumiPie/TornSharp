@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace TornSharp.ApiModels.CompanyModels.Profile;
 
-public class CompanyProfile : JsonModel, ICompanyStatistics
+public class CompanyProfile : JsonModel, ICompanyStats
 {
     [JsonPropertyName("company")]
     public Company Company { get; set; }

@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace TornSharp.ApiModels.FactionModels.Caches;
 
-public class FactionCaches : JsonModel, IFactionStatistics
+public class FactionCaches : JsonModel, IFactionStats
 {
     [JsonPropertyName("caches")]
     public List<ArmoryItem> Caches { get; set; }

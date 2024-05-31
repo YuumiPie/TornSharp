@@ -1,6 +1,6 @@
 namespace TornSharp.ApiModels.FactionModels.Cesium;
 
-public class FactionCesium : JsonModel, IFactionStatistics
+public class FactionCesium : JsonModel, IFactionStats
 {
     //model unfinished in unofficial api documentation
 

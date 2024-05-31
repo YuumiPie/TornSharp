@@ -2,7 +2,7 @@
 
 namespace TornSharp.ApiModels.UserModels.Medals;
 
-public class UserMedals : JsonModel, IUserStatistics
+public class UserMedals : JsonModel, IUserStats
 {
     [JsonPropertyName("medals_awarded")]
     public List<int> MedalsAwarded { get; set; }

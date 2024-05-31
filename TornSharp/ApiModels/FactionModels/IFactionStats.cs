@@ -1,6 +1,6 @@
 ﻿namespace TornSharp.ApiModels.FactionModels;
 
-public interface IFactionStatistics
+public interface IFactionStats
 {
     string GetMethodName();
 }

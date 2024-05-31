@@ -5,7 +5,7 @@ namespace TornSharp.ApiModels.TornModels.Territory;
 public class TornTerritory : JsonModel, ITornStats
 {
     [JsonPropertyName("territory")]
-    public Dictionary<string, Territory> Territories { get; set; }
+    public Dictionary<int, Territory> Territories { get; set; }
 
     public string GetMethodName()
     {

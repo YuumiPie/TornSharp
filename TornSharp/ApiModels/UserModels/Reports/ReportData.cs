@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using TornSharp.CustomJsonConverter;
 
 
 namespace TornSharp.ApiModels.UserModels.Reports;
@@ -29,9 +30,10 @@ public class ReportData : JsonModel
     [JsonPropertyName("invested_amount")]
     public int? InvestedAmount { get; set; }
 
-    //TODO parse to DateTime
+
     [JsonPropertyName("invested_completion")]
-    public string? InvestedCompletion { get; set; }
+    [JsonConverter(typeof(UnixDateTimeConverter))]
+    public DateTime? InvestedCompletion { get; set; }
 
     [JsonPropertyName("money")]
     public int? Money { get; set; }

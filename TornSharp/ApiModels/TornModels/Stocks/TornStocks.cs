@@ -5,7 +5,7 @@ namespace TornSharp.ApiModels.TornModels.Stocks;
 public class TornStocks : JsonModel, ITornStats
 {
     [JsonPropertyName("stocks")]
-    public Dictionary<string, Stock> Stocks { get; set; }
+    public Dictionary<int, Stock> Stocks { get; set; }
 
     public string GetMethodName()
     {

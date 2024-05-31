@@ -5,7 +5,7 @@ namespace TornSharp.ApiModels.TornModels.Honors;
 public class TornHonor : JsonModel, ITornStats
 {
     [JsonPropertyName("honors")]
-    public Dictionary<string, Honor> Honors { get; set; }
+    public Dictionary<int, Honor> Honors { get; set; }
 
     public string GetMethodName()
     {

@@ -5,10 +5,10 @@ namespace TornSharp.ApiModels.TornModels.Items;
 public class Item : JsonModel
 {
     [JsonPropertyName("buy_price")]
-    public int BuyPrice { get; set; }
+    public long BuyPrice { get; set; }
 
     [JsonPropertyName("circulation")]
-    public int Circulation { get; set; }
+    public long Circulation { get; set; }
 
     [JsonPropertyName("coverage")]
     public Coverage? Coverage { get; set; }
@@ -23,7 +23,7 @@ public class Item : JsonModel
     public string Image { get; set; }
 
     [JsonPropertyName("market_value")]
-    public int MarketValue { get; set; }
+    public long MarketValue { get; set; }
 
     [JsonPropertyName("name")]
     public string Name { get; set; }

@@ -46,7 +46,7 @@ public class ChainReport : JsonModel
     public int? Losses { get; set; }
 
     [JsonPropertyName("members")]
-    public Dictionary<string, Member> Members { get; set; }
+    public Dictionary<int, Member> Members { get; set; }
 
     [JsonPropertyName("mug")]
     public int? Mug { get; set; }

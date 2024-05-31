@@ -2,10 +2,10 @@
 
 namespace TornSharp.ApiModels.UserModels.Attacks;
 
-public class UserAttacks : JsonModel, IUserStatistics
+public class UserAttacks : JsonModel, IUserStats
 {
     [JsonPropertyName("attacks")]
-    public Dictionary<string, Attack> Attacks { get; set; }
+    public Dictionary<int, Attack> Attacks { get; set; }
 
     public string GetMethodName()
     {

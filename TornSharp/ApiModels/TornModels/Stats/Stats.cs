@@ -256,7 +256,7 @@ public class Stats : JsonModel
     public int TotalMeritsBought { get; set; }
 
     [JsonPropertyName("total_points_boughttotal")]
-    public int TotalPointsBoughtTotal { get; set; }
+    public long TotalPointsBoughtTotal { get; set; }
 
     [JsonPropertyName("total_refills_bought")]
     public int TotalRefillsBought { get; set; }

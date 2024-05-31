@@ -20,7 +20,7 @@ public class Stock : JsonModel
     public List<History>? History { get; set; }
 
     [JsonPropertyName("investors")]
-    public string Investors { get; set; }
+    public int Investors { get; set; }
 
     [JsonPropertyName("last_day")]
     public Price? LastDay { get; set; }
@@ -38,7 +38,7 @@ public class Stock : JsonModel
     public Price? LastYear { get; set; }
 
     [JsonPropertyName("market_cap")]
-    public int MarketCap { get; set; }
+    public long MarketCap { get; set; }
 
     [JsonPropertyName("name")]
     public string Name { get; set; }
@@ -47,5 +47,5 @@ public class Stock : JsonModel
     public int StockId { get; set; }
 
     [JsonPropertyName("total_shares")]
-    public int TotalShares { get; set; }
+    public long TotalShares { get; set; }
 }

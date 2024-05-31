@@ -2,10 +2,10 @@
 
 namespace TornSharp.ApiModels.UserModels.Stocks;
 
-public class UserStocks : JsonModel, IUserStatistics
+public class UserStocks : JsonModel, IUserStats
 {
     [JsonPropertyName("stocks")]
-    public Dictionary<string, Stock> Stocks { get; set; }
+    public List<KeyValuePair<int, Stock>> Stocks { get; set; }
 
     public string GetMethodName()
     {

@@ -1,6 +1,7 @@
 ﻿using System.Data;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using TornSharp.CustomJsonConverter;
 using TornSharp.Exceptions;
 using TornSharp.JsonDeserializerOptions;
 
@@ -15,6 +16,9 @@ public class ObjectFromUrl
     {
         options.Converters.Add(new JsonStringEnumConverterWithAttributeSupport());
         options.Converters.Add(new NullableConverterFactory());
+        options.Converters.Add(new BracketEmptyArrayConverter());
+        options.Converters.Add(new BlankStringToNumberConverter());
+        options.Converters.Add(new NumberToStringConverter());
     }
 
     public async Task<T> GetObject<T>(string url)
@@ -47,7 +51,7 @@ public class ObjectFromUrl
         }
         catch (Exception e)
         {
-            throw new Exception("Error converting Response: " + e.Message, e);
+            throw new Exception("Error converting Response", e);
         }
     }
 }

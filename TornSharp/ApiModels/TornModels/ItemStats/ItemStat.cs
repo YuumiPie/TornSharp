@@ -20,5 +20,5 @@ public class ItemStat : JsonModel
     public string Type { get; set; }
 
     [JsonPropertyName("UID")]
-    public int Uid { get; set; }
+    public long Uid { get; set; }
 }

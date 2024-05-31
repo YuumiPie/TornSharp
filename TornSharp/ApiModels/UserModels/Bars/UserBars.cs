@@ -2,7 +2,7 @@
 
 namespace TornSharp.ApiModels.UserModels.Bars;
 
-public class UserBars : JsonModel, IUserStatistics
+public class UserBars : JsonModel, IUserStats
 {
     [JsonPropertyName("chain")]
     public ChainBar Chain { get; set; }

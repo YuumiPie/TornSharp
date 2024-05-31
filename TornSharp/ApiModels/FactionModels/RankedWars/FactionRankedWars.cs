@@ -2,10 +2,10 @@ using System.Text.Json.Serialization;
 
 namespace TornSharp.ApiModels.FactionModels.RankedWars;
 
-public class FactionRankedWars : JsonModel, IFactionStatistics
+public class FactionRankedWars : JsonModel, IFactionStats
 {
     [JsonPropertyName("rankedwars")]
-    public Dictionary<string, RankedWar> RankedWars { get; set; }
+    public Dictionary<int, RankedWar> RankedWars { get; set; }
 
     public string GetMethodName()
     {

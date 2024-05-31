@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace TornSharp.ApiModels.UserModels.PublicStatus;
 
-public class UserPublicStatus : JsonModel, IUserStatistics
+public class UserPublicStatus : JsonModel, IUserStats
 {
     [JsonPropertyName("baned")]
     public bool Banned { get; set; }

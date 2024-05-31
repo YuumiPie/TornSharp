@@ -5,7 +5,7 @@ namespace TornSharp.ApiModels.TornModels.OrganizedCrimes;
 public class TornOrganizedCrimes : JsonModel, ITornStats
 {
     [JsonPropertyName("organisedcrimes")]
-    public Dictionary<string, OrganizedCrime> OrganizedCrimes { get; set; }
+    public Dictionary<int, OrganizedCrime> OrganizedCrimes { get; set; }
 
     public string GetMethodName()
     {

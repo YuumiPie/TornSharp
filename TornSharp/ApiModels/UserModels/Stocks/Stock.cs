@@ -17,5 +17,5 @@ public class Stock : JsonModel
     public int TotalShares { get; set; }
 
     [JsonPropertyName("transactions")]
-    public Dictionary<string, Transaction> Transactions { get; set; }
+    public Dictionary<int, Transaction> Transactions { get; set; }
 }

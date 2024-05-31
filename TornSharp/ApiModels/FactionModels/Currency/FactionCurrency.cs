@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace TornSharp.ApiModels.FactionModels.Currency;
 
-public class FactionCurrency : JsonModel, IFactionStatistics
+public class FactionCurrency : JsonModel, IFactionStats
 {
     [JsonPropertyName("faction_id")]
     public int FactionId { get; set; }

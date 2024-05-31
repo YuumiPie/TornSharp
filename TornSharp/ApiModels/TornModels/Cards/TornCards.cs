@@ -5,7 +5,7 @@ namespace TornSharp.ApiModels.TornModels.Cards;
 public class TornCards : JsonModel, ITornStats
 {
     [JsonPropertyName("cards")]
-    public Dictionary<string, Card> Cards { get; set; }
+    public Dictionary<int, Card> Cards { get; set; }
 
     public string GetMethodName()
     {

@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace TornSharp.ApiModels.UserModels.Skills;
 
-public class UserSkills : JsonModel, IUserStatistics
+public class UserSkills : JsonModel, IUserStats
 {
     [JsonPropertyName("bootlegging")]
     public string? Bootlegging { get; set; }

@@ -11,7 +11,7 @@ public class ItemDetail : JsonModel
     public double? Armor { get; set; }
 
     [JsonPropertyName("bonuses")]
-    public Dictionary<string, Bonus>? Bonuses { get; set; }
+    public Dictionary<int, Bonus>? Bonuses { get; set; }
 
     [JsonPropertyName("damage")]
     public double? Damage { get; set; }
@@ -32,5 +32,5 @@ public class ItemDetail : JsonModel
     public string Type { get; set; }
 
     [JsonPropertyName("UID")]
-    public int Uid { get; set; }
+    public long Uid { get; set; }
 }

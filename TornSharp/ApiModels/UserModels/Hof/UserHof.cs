@@ -2,10 +2,10 @@
 
 namespace TornSharp.ApiModels.UserModels.Hof;
 
-public class UserHof : JsonModel, IUserStatistics
+public class UserHof : JsonModel, IUserStats
 {
     [JsonPropertyName("hof")]
-    public Dictionary<string, HallOfFame> hof { get; set; }
+    public Dictionary<int, HallOfFame> hof { get; set; }
 
     public string GetMethodName()
     {

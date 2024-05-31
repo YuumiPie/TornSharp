@@ -2,7 +2,7 @@
 
 namespace TornSharp.ApiModels.UserModels.Basic;
 
-public class UserBasic : JsonModel, IUserStatistics
+public class UserBasic : JsonModel, IUserStats
 {
     [JsonPropertyName("gender")]
     public Gender Gender { get; set; }

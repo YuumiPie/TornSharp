@@ -5,7 +5,7 @@ namespace TornSharp.ApiModels.TornModels.Companies;
 public class Company : JsonModel
 {
     [JsonPropertyName("cost")]
-    public int Cost { get; set; }
+    public long Cost { get; set; }
 
     [JsonPropertyName("default_employees")]
     public int DefaultEmployees { get; set; }

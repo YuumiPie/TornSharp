@@ -5,10 +5,12 @@ namespace TornSharp.ApiModels.FactionModels.Territory;
 public class Territory : JsonModel
 {
     [JsonPropertyName("coordinate_x")]
-    public string CoordinateX { get; set; }
+    [JsonNumberHandling(JsonNumberHandling.AllowReadingFromString)]
+    public double CoordinateX{ get; set; }
 
     [JsonPropertyName("coordinate_y")]
-    public string CoordinateY { get; set; }
+    [JsonNumberHandling(JsonNumberHandling.AllowReadingFromString)]
+    public double CoordinateY { get; set; }
 
     [JsonPropertyName("daily_respect")]
     public int DailyRespect { get; set; }

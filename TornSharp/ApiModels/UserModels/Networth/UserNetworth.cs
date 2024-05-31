@@ -2,7 +2,7 @@
 
 namespace TornSharp.ApiModels.UserModels.Networth;
 
-public class UserNetworth : JsonModel, IUserStatistics
+public class UserNetworth : JsonModel, IUserStats
 {
     [JsonPropertyName("networth")]
     public Networth Networth { get; set; }

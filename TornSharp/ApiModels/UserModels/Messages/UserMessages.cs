@@ -2,10 +2,10 @@
 
 namespace TornSharp.ApiModels.UserModels.Messages;
 
-public class UserMessages : JsonModel, IUserStatistics
+public class UserMessages : JsonModel, IUserStats
 {
     [JsonPropertyName("messages")]
-    public Dictionary<string, Message> Messages { get; set; }
+    public Dictionary<int, Message> Messages { get; set; }
 
     public string GetMethodName()
     {

@@ -11,7 +11,7 @@ public class Honor : JsonModel
     public string Description { get; set; }
 
     [JsonPropertyName("equipped")]
-    public string? Equipped { get; set; }
+    public int? Equipped { get; set; }
 
     [JsonPropertyName("name")]
     public string Name { get; set; }

@@ -2,7 +2,7 @@
 
 namespace TornSharp.ApiModels.UserModels.Display;
 
-public class UserDisplay : JsonModel, IUserStatistics
+public class UserDisplay : JsonModel, IUserStats
 {
     [JsonPropertyName("display")]
     public List<Display> Display { get; set; }

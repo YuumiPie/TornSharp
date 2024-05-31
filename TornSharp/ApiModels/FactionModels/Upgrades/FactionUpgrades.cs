@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace TornSharp.ApiModels.FactionModels.Upgrades;
 
-public class FactionUpgrades : JsonModel, IFactionStatistics
+public class FactionUpgrades : JsonModel, IFactionStats
 {
     [JsonPropertyName("peace")]
     public Dictionary<int, Upgrade> Peace { get; set; }

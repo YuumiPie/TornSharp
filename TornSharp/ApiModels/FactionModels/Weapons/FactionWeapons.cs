@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace TornSharp.ApiModels.FactionModels.Weapons;
 
-public class FactionWeapons : JsonModel, IFactionStatistics
+public class FactionWeapons : JsonModel, IFactionStats
 {
     [JsonPropertyName("weapons")]
     public List<LoanableArmoryItem> Weapons { get; set; }

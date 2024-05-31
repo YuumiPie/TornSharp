@@ -1,6 +1,6 @@
 ﻿namespace TornSharp.ApiModels.CompanyModels;
 
-public interface ICompanyStatistics
+public interface ICompanyStats
 {
     string GetMethodName();
 }

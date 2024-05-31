@@ -2,7 +2,7 @@
 
 namespace TornSharp.ApiModels.UserModels.Honors;
 
-public class UserHonors : JsonModel, IUserStatistics
+public class UserHonors : JsonModel, IUserStats
 {
     [JsonPropertyName("honors_awarded")]
     public List<int> HonorsAwarded { get; set; }

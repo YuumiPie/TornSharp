@@ -2,8 +2,9 @@
 
 namespace TornSharp.ApiModels.UserModels.Icons;
 
-public class UserIcons : JsonModel, IUserStatistics
+public class UserIcons : JsonModel, IUserStats
 {
+    //icon format is string{id}
     [JsonPropertyName("icons")]
     public Dictionary<string, string> Icons { get; set; }
 

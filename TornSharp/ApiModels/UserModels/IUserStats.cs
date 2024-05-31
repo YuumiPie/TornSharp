@@ -1,6 +1,6 @@
 ﻿namespace TornSharp.ApiModels.UserModels;
 
-public interface IUserStatistics
+public interface IUserStats
 {
     string GetMethodName();
 }

@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace TornSharp.ApiModels.PropertyModels.Property;
 
-public class PropertyProperty : JsonModel, IPropertyStatistics
+public class PropertyProperty : JsonModel, IPropertyStats
 {
     [JsonPropertyName("property")]
     public Property Property { get; set; }

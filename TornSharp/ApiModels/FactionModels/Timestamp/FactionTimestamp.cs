@@ -3,7 +3,7 @@ using TornSharp.CustomJsonConverter;
 
 namespace TornSharp.ApiModels.FactionModels.Timestamp;
 
-public class FactionTimestamp : JsonModel, IFactionStatistics
+public class FactionTimestamp : JsonModel, IFactionStats
 {
     [JsonPropertyName("timestamp")]
     [JsonConverter(typeof(UnixDateTimeConverter))]

@@ -2,10 +2,10 @@ using System.Text.Json.Serialization;
 
 namespace TornSharp.ApiModels.FactionModels.Positions;
 
-public class FactionPosition : JsonModel, IFactionStatistics
+public class FactionPosition : JsonModel, IFactionStats
 {
     [JsonPropertyName("positions")]
-    public Dictionary<string, Position> Positions { get; set; }
+    public Dictionary<int, Position> Positions { get; set; }
 
     public string GetMethodName()
     {

@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace TornSharp.ApiModels.MarketModels.Bazaar;
 
-public class MarketBazaar : JsonModel, IMarketStatistics
+public class MarketBazaar : JsonModel, IMarketStats
 {
     [JsonPropertyName("bazaar")]
     public List<Item>? Bazaar { get; set; }

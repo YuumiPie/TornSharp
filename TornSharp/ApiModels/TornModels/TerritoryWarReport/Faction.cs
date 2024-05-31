@@ -11,7 +11,7 @@ public class Faction : JsonModel
     public int Joins { get; set; }
 
     [JsonPropertyName("members")]
-    public Dictionary<string, User> Members { get; set; }
+    public Dictionary<int, User> Members { get; set; }
 
     [JsonPropertyName("name")]
     public int Name { get; set; }

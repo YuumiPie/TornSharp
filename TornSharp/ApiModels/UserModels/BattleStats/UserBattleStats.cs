@@ -2,7 +2,7 @@
 
 namespace TornSharp.ApiModels.UserModels.BattleStats;
 
-public class UserBattleStats : JsonModel, IUserStatistics
+public class UserBattleStats : JsonModel, IUserStats
 {
     [JsonPropertyName("defense")]
     public int Defense { get; set; }

@@ -16,9 +16,9 @@ public class Travel : JsonModel
     public TravelMethod Method { get; set; }
 
     [JsonPropertyName("time_left")]
-    public string TimeLeft { get; set; }
+    public int TimeLeft { get; set; }
 
     [JsonPropertyName("timestamp")]
     [JsonConverter(typeof(UnixDateTimeConverter))]
-    public string Timestamp { get; set; }
+    public DateTime Timestamp { get; set; }
 }

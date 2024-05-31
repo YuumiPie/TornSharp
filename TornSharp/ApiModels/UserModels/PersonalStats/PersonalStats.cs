@@ -62,7 +62,7 @@ public class PersonalStats : JsonModel
     public int? BazaarCustomers { get; set; }
 
     [JsonPropertyName("bazaarprofit")]
-    public int? BazaarIncome { get; set; }
+    public long? BazaarIncome { get; set; }
 
     [JsonPropertyName("bazaarsales")]
     public int? BazaarSales { get; set; }

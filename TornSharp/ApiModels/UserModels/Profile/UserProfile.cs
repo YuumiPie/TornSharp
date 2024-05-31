@@ -3,7 +3,7 @@ using TornSharp.CustomJsonConverter;
 
 namespace TornSharp.ApiModels.UserModels.Profile;
 
-public class UserProfile : JsonModel, IUserStatistics
+public class UserProfile : JsonModel, IUserStats
 {
     [JsonPropertyName("age")]
     public int Age { get; set; }
@@ -11,6 +11,7 @@ public class UserProfile : JsonModel, IUserStatistics
     [JsonPropertyName("awards")]
     public int Awards { get; set; }
 
+    //icon{int} format for some reason
     [JsonPropertyName("basicicons")]
     public Dictionary<string, string> Icons { get; set; }
 
@@ -80,11 +81,11 @@ public class UserProfile : JsonModel, IUserStatistics
     public bool Revivable { get; set; }
 
     [JsonPropertyName("role")]
-    public bool Role { get; set; }
-
-    //TODO convert to DateTime
+    public string Role { get; set; }
+    
     [JsonPropertyName("signup")]
-    public string Signup { get; set; }
+    [JsonConverter(typeof(UnixDateTimeConverter))]
+    public DateTime Signup { get; set; }
 
     [JsonPropertyName("states")]
     public States States { get; set; }

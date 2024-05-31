@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace TornSharp.ApiModels.KeyModels.Info;
 
-public class KeyInfo : JsonModel, IKeyStatistics
+public class KeyInfo : JsonModel, IKeyStats
 {
     [JsonPropertyName("access_level")]
     public AccessLevel AccessLevel { get; set; }

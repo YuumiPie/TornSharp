@@ -2,7 +2,7 @@
 
 namespace TornSharp.ApiModels.UserModels.Education;
 
-public class UserEducation : JsonModel, IUserStatistics
+public class UserEducation : JsonModel, IUserStats
 {
     [JsonPropertyName("education_completed")]
     public List<int> EducationCompleted { get; set; }

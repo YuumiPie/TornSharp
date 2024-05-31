@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace TornSharp.ApiModels.FactionModels.Contributors;
 
-public class FactionContributors : JsonModel, IFactionStatistics
+public class FactionContributors : JsonModel, IFactionStats
 {
     [JsonPropertyName("contributors")]
     public Contributors Contributors { get; set; }

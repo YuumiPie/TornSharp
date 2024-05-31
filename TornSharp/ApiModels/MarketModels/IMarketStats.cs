@@ -1,6 +1,6 @@
 ﻿namespace TornSharp.ApiModels.MarketModels;
 
-public interface IMarketStatistics
+public interface IMarketStats
 {
     string GetMethodName();
 }

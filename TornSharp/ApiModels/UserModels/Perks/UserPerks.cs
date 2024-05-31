@@ -2,7 +2,7 @@
 
 namespace TornSharp.ApiModels.UserModels.Perks;
 
-public class UserPerks : JsonModel, IUserStatistics
+public class UserPerks : JsonModel, IUserStats
 {
     [JsonPropertyName("job_perks")]
     public List<string> JobPerks { get; set; }

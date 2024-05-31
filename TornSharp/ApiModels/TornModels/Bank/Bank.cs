@@ -5,17 +5,17 @@ namespace TornSharp.ApiModels.TornModels.Bank;
 public class Bank : JsonModel
 {
     [JsonPropertyName("1m")]
-    public int OneMonth { get; set; }
+    public double OneMonth { get; set; }
 
     [JsonPropertyName("1w")]
-    public int OneWeek { get; set; }
+    public double OneWeek { get; set; }
 
     [JsonPropertyName("2m")]
-    public int TwoMonths { get; set; }
+    public double TwoMonths { get; set; }
 
     [JsonPropertyName("2w")]
-    public int TwoWeeks { get; set; }
+    public double TwoWeeks { get; set; }
 
     [JsonPropertyName("3m")]
-    public int ThreeMonths { get; set; }
+    public double ThreeMonths { get; set; }
 }

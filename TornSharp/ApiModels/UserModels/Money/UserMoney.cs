@@ -2,7 +2,7 @@
 
 namespace TornSharp.ApiModels.UserModels.Money;
 
-public class UserMoney : JsonModel, IUserStatistics
+public class UserMoney : JsonModel, IUserStats
 {
     [JsonPropertyName("cayman_bank")]
     public long CaymanBank { get; set; }

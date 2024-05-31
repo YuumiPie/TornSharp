@@ -2,7 +2,7 @@
 
 namespace TornSharp.ApiModels.UserModels.Cooldown;
 
-public class UserCooldowns : JsonModel, IUserStatistics
+public class UserCooldowns : JsonModel, IUserStats
 {
     [JsonPropertyName("cooldowns")]
     public Cooldowns Cooldowns { get; set; }

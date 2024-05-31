@@ -1,4 +1,5 @@
 ﻿using System.Text.Json.Serialization;
+using TornSharp.CustomJsonConverter;
 
 namespace TornSharp.ApiModels.UserModels.Messages;
 
@@ -11,9 +12,11 @@ public class Message : JsonModel
     public string Name { get; set; }
 
     [JsonPropertyName("read")]
+    [JsonConverter(typeof(BoolConverter))]
     public bool Read { get; set; }
 
     [JsonPropertyName("seen")]
+    [JsonConverter(typeof(BoolConverter))]
     public bool Seen { get; set; }
 
     [JsonPropertyName("timestamp")]

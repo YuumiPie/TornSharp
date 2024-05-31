@@ -3,7 +3,7 @@ using TornSharp.CustomJsonConverter;
 
 namespace TornSharp.ApiModels.FactionModels.Basic;
 
-public class FactionBasic : JsonModel, IFactionStatistics
+public class FactionBasic : JsonModel, IFactionStats
 {
     [JsonPropertyName("age")]
     public int Age { get; set; }
@@ -28,11 +28,10 @@ public class FactionBasic : JsonModel, IFactionStatistics
 
     [JsonPropertyName("name")]
     public string Name { get; set; }
-
-    //possible failure with DateTimeConverter
+    
     [JsonPropertyName("peace")]
-    [JsonConverter(typeof(UnixDateTimeConverter))]
-    public Dictionary<long, DateTime> Peace { get; set; }
+    [JsonConverter(typeof(DictionaryUnixDateTimeConverter))] 
+    public Dictionary<int, DateTime> Peace { get; set; }
 
     [JsonPropertyName("raid_wars")]
     public List<Raid> RaidWars { get; set; }

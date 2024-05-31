@@ -2,10 +2,10 @@ using System.Text.Json.Serialization;
 
 namespace TornSharp.ApiModels.FactionModels.AttackNews;
 
-public class FactionAttackNews : JsonModel, IFactionStatistics
+public class FactionAttackNews : JsonModel, IFactionStats
 {
     [JsonPropertyName("attacknews")]
-    public Dictionary<string, NewsEntry> AttackNews { get; set; }
+    public Dictionary<int, NewsEntry> AttackNews { get; set; }
 
     public string GetMethodName()
     {

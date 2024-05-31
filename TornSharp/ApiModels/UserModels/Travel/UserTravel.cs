@@ -2,7 +2,7 @@
 
 namespace TornSharp.ApiModels.UserModels.Travel;
 
-public class UserTravel : JsonModel, IUserStatistics
+public class UserTravel : JsonModel, IUserStats
 {
     [JsonPropertyName("travel")]
     public Travel Travel { get; set; }
