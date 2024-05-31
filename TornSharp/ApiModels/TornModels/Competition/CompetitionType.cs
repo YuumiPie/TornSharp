@@ -13,5 +13,5 @@ public enum CompetitionType
     Elimination,
     Halloween,
     [EnumMember(Value = "Mr & Ms Torn")]
-    MrAndMsTorn
+    MrAndMsTorn,
 }

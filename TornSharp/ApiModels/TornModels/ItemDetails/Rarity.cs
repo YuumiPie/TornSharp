@@ -8,5 +8,5 @@ public enum Rarity
     None,
     Orange,
     Red,
-    Yellow
+    Yellow,
 }

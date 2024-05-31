@@ -18,7 +18,7 @@ public class Company : JsonModel
 
     [JsonPropertyName("director")]
     public int Director { get; set; }
-    
+
     [JsonPropertyName("employees")]
     public Dictionary<int, Employee> Employees { get; set; }
 

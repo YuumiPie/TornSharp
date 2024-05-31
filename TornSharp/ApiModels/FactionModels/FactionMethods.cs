@@ -38,5 +38,5 @@ public enum FactionMethods
     territorynews,
     timestamp,
     upgrades,
-    weapons
+    weapons,
 }

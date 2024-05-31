@@ -7,5 +7,5 @@ public enum LastActionStatus
 {
     Idle,
     Offline,
-    Online
+    Online,
 }

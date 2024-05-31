@@ -15,5 +15,5 @@ public enum Rarity
     [EnumMember(Value = "Very Common")]
     VeryCommon,
     [EnumMember(Value = "Very Rare")]
-    VeryRare
+    VeryRare,
 }

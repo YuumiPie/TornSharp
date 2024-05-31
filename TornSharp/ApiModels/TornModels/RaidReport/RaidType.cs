@@ -9,5 +9,5 @@ public enum RaidType
     [EnumMember(Value = "aggressor")]
     Aggressor,
     [EnumMember(Value = "defender")]
-    Defender
+    Defender,
 }

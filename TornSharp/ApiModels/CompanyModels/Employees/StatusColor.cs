@@ -11,5 +11,5 @@ public enum StatusColor
     [EnumMember(Value = "green")]
     Green,
     [EnumMember(Value = "red")]
-    Red
+    Red,
 }

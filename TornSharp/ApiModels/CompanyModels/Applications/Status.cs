@@ -14,5 +14,5 @@ public enum Status
     [EnumMember(Value = "declined")]
     Declined,
     [EnumMember(Value = "withdrawn")]
-    Withdrawn
+    Withdrawn,
 }

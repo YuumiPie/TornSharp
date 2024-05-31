@@ -21,5 +21,5 @@ public enum ReportType
     [EnumMember(Value = "stats")]
     Stats,
     [EnumMember(Value = "truelevel")]
-    TrueLevel
+    TrueLevel,
 }

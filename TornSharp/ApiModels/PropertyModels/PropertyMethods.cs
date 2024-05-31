@@ -4,5 +4,5 @@ public enum PropertyMethods
 {
     lookup,
     property,
-    timestamp
+    timestamp,
 }

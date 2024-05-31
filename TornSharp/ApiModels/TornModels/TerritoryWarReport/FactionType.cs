@@ -9,5 +9,5 @@ public enum FactionType
     [EnumMember(Value = "aggressor")]
     Aggressor,
     [EnumMember(Value = "defender")]
-    Defender
+    Defender,
 }

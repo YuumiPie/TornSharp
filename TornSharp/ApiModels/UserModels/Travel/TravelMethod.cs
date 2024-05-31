@@ -8,5 +8,5 @@ public enum TravelMethod
     Airstrip,
     Business,
     Private,
-    Standard
+    Standard,
 }

@@ -5,7 +5,7 @@ namespace TornSharp.Utils;
 
 public class ApiCaller
 {
-    private static HttpClient client = new();
+    private static readonly HttpClient client = new();
 
     public async Task<string> GET(string url)
     {

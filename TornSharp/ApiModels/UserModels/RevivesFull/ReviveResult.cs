@@ -9,5 +9,5 @@ public enum ReviveResult
     [EnumMember(Value = "failure")]
     Failure,
     [EnumMember(Value = "success")]
-    Success
+    Success,
 }

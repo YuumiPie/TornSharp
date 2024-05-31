@@ -15,5 +15,5 @@ public enum AccessLevel
     [EnumMember(Value = "3")]
     Three,
     [EnumMember(Value = "4")]
-    Four
+    Four,
 }

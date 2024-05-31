@@ -8,8 +8,8 @@ namespace TornSharp.Utils;
 
 public class ObjectFromUrl
 {
-    private ApiCaller apiCaller = new();
-    private JsonSerializerOptions options = new();
+    private readonly ApiCaller apiCaller = new();
+    private readonly JsonSerializerOptions options = new();
 
     public ObjectFromUrl()
     {

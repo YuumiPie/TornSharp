@@ -6,7 +6,7 @@ public class UserPerks : JsonModel, IUserStats
 {
     [JsonPropertyName("job_perks")]
     public List<string> JobPerks { get; set; }
-    
+
     [JsonPropertyName("book_perks")]
     public List<string> BookPerks { get; set; }
 

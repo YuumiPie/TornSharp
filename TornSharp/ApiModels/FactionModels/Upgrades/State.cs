@@ -9,5 +9,5 @@ public enum State
     [EnumMember(Value = "peace")]
     Peace,
     [EnumMember(Value = "war")]
-    War
+    War,
 }

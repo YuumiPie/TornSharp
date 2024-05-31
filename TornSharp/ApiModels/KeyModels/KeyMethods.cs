@@ -2,5 +2,5 @@
 
 public enum KeyMethods
 {
-    info
+    info,
 }

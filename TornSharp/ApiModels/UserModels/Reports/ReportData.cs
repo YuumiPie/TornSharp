@@ -1,7 +1,6 @@
 using System.Text.Json.Serialization;
 using TornSharp.CustomJsonConverter;
 
-
 namespace TornSharp.ApiModels.UserModels.Reports;
 
 public class ReportData : JsonModel

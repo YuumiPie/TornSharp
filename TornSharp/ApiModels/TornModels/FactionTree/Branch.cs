@@ -13,5 +13,5 @@ public enum Branch
     Steadfast,
     Suppression,
     Toleration,
-    Voracity
+    Voracity,
 }

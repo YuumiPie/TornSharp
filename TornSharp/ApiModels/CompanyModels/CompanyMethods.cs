@@ -10,5 +10,5 @@ public enum CompanyMethods
     news,
     profile,
     stock,
-    timestamp
+    timestamp,
 }

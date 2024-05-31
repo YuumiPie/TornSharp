@@ -10,5 +10,5 @@ public enum Rank
     Gold,
     Platinum,
     Silver,
-    Unranked
+    Unranked,
 }

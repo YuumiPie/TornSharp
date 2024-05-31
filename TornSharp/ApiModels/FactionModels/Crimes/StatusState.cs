@@ -11,5 +11,5 @@ public enum StatusState
     Hospital,
     Jail,
     Okay,
-    Traveling
+    Traveling,
 }

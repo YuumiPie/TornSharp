@@ -6,5 +6,5 @@ public enum MarketMethods
     itemmarket,
     lookup,
     pointsmarket,
-    timestamp
+    timestamp,
 }

@@ -38,5 +38,5 @@ public enum TornMethods
     territorynames,
     territorywarreport,
     territorywars,
-    timestamp
+    timestamp,
 }

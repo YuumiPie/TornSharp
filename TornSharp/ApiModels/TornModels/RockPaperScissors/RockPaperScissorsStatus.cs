@@ -11,5 +11,5 @@ public enum RockPaperScissorsStatus
     [EnumMember(Value = "rock")]
     Rock,
     [EnumMember(Value = "scissors")]
-    Scissors
+    Scissors,
 }

@@ -13,5 +13,5 @@ public enum AttackResult
     Mugged,
     Special,
     Stalemate,
-    Timeout
+    Timeout,
 }

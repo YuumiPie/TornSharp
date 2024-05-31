@@ -14,5 +14,5 @@ public enum AccessType
     [EnumMember(Value = "Minimal Access")]
     MinimalAccess,
     [EnumMember(Value = "Public Only")]
-    PublicOnly
+    PublicOnly,
 }

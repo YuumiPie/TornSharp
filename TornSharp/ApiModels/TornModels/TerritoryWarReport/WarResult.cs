@@ -11,5 +11,5 @@ public enum WarResult
     [EnumMember(Value = "fail_assault")]
     FailAssault,
     [EnumMember(Value = "success_assault")]
-    SuccessAssault
+    SuccessAssault,
 }

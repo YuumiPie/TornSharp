@@ -10,5 +10,5 @@ public enum SpecialAbility
     Marketer,
     None,
     Secretary,
-    Trainer
+    Trainer,
 }

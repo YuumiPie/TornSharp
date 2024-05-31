@@ -17,5 +17,5 @@ public enum Fields
     [EnumMember(Value = "torn")]
     Torn,
     [EnumMember(Value = "key")]
-    Key
+    Key,
 }

@@ -9,5 +9,5 @@ public enum BenefitType
     [EnumMember(Value = "active")]
     Active,
     [EnumMember(Value = "passive")]
-    Passive
+    Passive,
 }
