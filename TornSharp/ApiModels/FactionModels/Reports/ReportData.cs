@@ -28,7 +28,7 @@ public class ReportData : JsonModel
 
     [JsonPropertyName("invested_amount")]
     public int? InvestedAmount { get; set; }
-    
+
     [JsonPropertyName("invested_completion")]
     [JsonConverter(typeof(UnixDateTimeConverter))]
     public DateTime? InvestedCompletion { get; set; }

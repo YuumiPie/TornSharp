@@ -1,6 +1,5 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using TornSharp.ApiModels.FactionModels;
 
 namespace TornSharp.JsonDeserializerOptions;
 
@@ -10,7 +9,7 @@ public class BlankStringToNumberConverter : JsonConverter<int>
     {
         return typeToConvert == typeof(int);
     }
-    
+
     public override int Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
     {
         using JsonDocument jsonDoc = JsonDocument.ParseValue(ref reader);

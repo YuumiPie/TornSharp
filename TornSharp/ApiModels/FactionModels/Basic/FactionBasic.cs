@@ -28,9 +28,9 @@ public class FactionBasic : JsonModel, IFactionStats
 
     [JsonPropertyName("name")]
     public string Name { get; set; }
-    
+
     [JsonPropertyName("peace")]
-    [JsonConverter(typeof(DictionaryUnixDateTimeConverter))] 
+    [JsonConverter(typeof(DictionaryUnixDateTimeConverter))]
     public Dictionary<int, DateTime> Peace { get; set; }
 
     [JsonPropertyName("raid_wars")]

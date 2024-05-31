@@ -5,7 +5,7 @@ namespace TornSharp.ApiModels.TornModels.Territory;
 public class Territory : JsonModel
 {
     [JsonPropertyName("coordinate_x")]
-    public double CoordinateX{ get; set; }
+    public double CoordinateX { get; set; }
 
     [JsonPropertyName("coordinate_y")]
     public double CoordinateY { get; set; }

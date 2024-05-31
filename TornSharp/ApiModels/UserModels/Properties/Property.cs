@@ -6,7 +6,7 @@ public class Property : JsonModel
 {
     [JsonPropertyName("cost")]
     public int Cost { get; set; }
-    
+
     [JsonPropertyName("happy")]
     public int Happy { get; set; }
 

@@ -1,7 +1,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace TornSharp.CustomJsonConverter;
+namespace TornSharp.JsonDeserializerOptions;
 
 public class NumberToStringConverter : JsonConverter<string>
 {

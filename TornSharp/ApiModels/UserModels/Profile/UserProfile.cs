@@ -82,7 +82,7 @@ public class UserProfile : JsonModel, IUserStats
 
     [JsonPropertyName("role")]
     public string Role { get; set; }
-    
+
     [JsonPropertyName("signup")]
     [JsonConverter(typeof(UnixDateTimeConverter))]
     public DateTime Signup { get; set; }

@@ -6,7 +6,7 @@ public class Territory : JsonModel
 {
     [JsonPropertyName("coordinate_x")]
     [JsonNumberHandling(JsonNumberHandling.AllowReadingFromString)]
-    public double CoordinateX{ get; set; }
+    public double CoordinateX { get; set; }
 
     [JsonPropertyName("coordinate_y")]
     [JsonNumberHandling(JsonNumberHandling.AllowReadingFromString)]

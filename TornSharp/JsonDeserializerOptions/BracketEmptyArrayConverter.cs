@@ -10,7 +10,7 @@ public class BracketEmptyArrayConverter : JsonConverterFactory
     {
         return typeToConvert.IsGenericType && typeToConvert.GetGenericTypeDefinition() == typeof(List<>);
     }
-    
+
     public override JsonConverter CreateConverter(Type typeToConvert, JsonSerializerOptions options)
     {
         Type[] typeArguments = typeToConvert.GetGenericArguments();
@@ -32,7 +32,7 @@ public class BracketEmptyArrayConverter : JsonConverterFactory
         public BracketEmptyArrayConverterInner(JsonSerializerOptions options)
         {
         }
-        
+
         public override List<TValue> Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {
             using JsonDocument jsonDoc = JsonDocument.ParseValue(ref reader);

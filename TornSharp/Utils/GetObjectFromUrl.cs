@@ -1,7 +1,6 @@
 ﻿using System.Data;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using TornSharp.CustomJsonConverter;
 using TornSharp.Exceptions;
 using TornSharp.JsonDeserializerOptions;
 

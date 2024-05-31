@@ -1,6 +1,5 @@
 using System.Text.Json.Serialization;
 using TornSharp.CustomJsonConverter;
-using TornSharp.JsonDeserializerOptions;
 
 namespace TornSharp.ApiModels.UserModels.Log;
 
