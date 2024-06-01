@@ -59,6 +59,17 @@ instead of
 var education = api.GetFromUserApi<TornEducation>().Result;
 ```
 
+Support for combined api calls are possible
+```c#
+//gets two endpoint objects in one call
+List<object> market = api.GetFromMarketApi<MarketBazaar, MarketItemMarket>().Result;
+//type muse be casted
+MarketBazaar bazaar = (MarketBazaar)market[0];
+MarketItemMarket ItemMarket = (MarketItemMarket)market[1];
+```
+Note: like above, combined calls must be part of the same endpoints and some combinations may not work
+
+
 These are the current endpoint categories available:
 * User
 * Property
