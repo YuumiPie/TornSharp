@@ -24,7 +24,7 @@ public class FactionBasic : JsonModel, IFactionStats
     public int Leader { get; set; }
 
     [JsonPropertyName("members")]
-    public Dictionary<long, Member> Members { get; set; }
+    public Dictionary<int, Member> Members { get; set; }
 
     [JsonPropertyName("name")]
     public string Name { get; set; }
