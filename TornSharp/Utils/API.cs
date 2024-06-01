@@ -36,9 +36,9 @@ public class API
     /// <param name="apiKey">Key you are about to use</param>
     public void ChangeApiKey(string apiKey)
     {
-        this.ApiKey = apiKey;
-        this.ApiCallCount = 0;
-        this._lastReset = DateTime.Now;
+        ApiKey = apiKey;
+        ApiCallCount = 0;
+        _lastReset = DateTime.Now;
     }
 
     /// <summary>

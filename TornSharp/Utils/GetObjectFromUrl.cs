@@ -19,7 +19,7 @@ public class ObjectFromUrl
         options.Converters.Add(new NumberToStringConverter());
     }
 
-    public async Task<T> GetObject<T>(string url)
+    public async Task<string> GetJson(string url)
     {
         string response;
         try
@@ -38,6 +38,11 @@ public class ObjectFromUrl
             throw new TornSharpErrorJsonException($"{url} call returned error json", error.GetRawText());
         }
 
+        return response;
+    }
+
+    public T GetObject<T>(string response)
+    {
         try
         {
             T? model = JsonSerializer.Deserialize<T>(response, options);
