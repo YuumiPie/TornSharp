@@ -11,7 +11,7 @@ public class UnixDateTimeConverter : JsonConverter<DateTime>
         string rawTime = jsonDoc.RootElement.GetRawText();
         if (int.TryParse(rawTime, out int unixTime))
         {
-            return DateTime.UnixEpoch.AddMilliseconds(unixTime);
+            return DateTime.UnixEpoch.AddSeconds(unixTime);
         }
         rawTime = rawTime.Replace("\"", "");
         return DateTime.Parse(rawTime);
