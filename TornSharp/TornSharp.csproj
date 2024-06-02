@@ -14,8 +14,8 @@
         <RepositoryType>git</RepositoryType>
         <Copyright>Copyright (c) YuumiPie 2024-2024</Copyright>
         <PackageTags>TornCity Wrapper</PackageTags>
-        <Version>1.1.0</Version>
-        <PackageReleaseNotes>Added support for combined api calls</PackageReleaseNotes>
+        <Version>1.1.1</Version>
+        <PackageReleaseNotes>Fixed unix time converter</PackageReleaseNotes>
     </PropertyGroup>
 
     <ItemGroup>
