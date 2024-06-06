@@ -21,10 +21,10 @@ public class DictionaryUnixDateTimeConverter : JsonConverter<Dictionary<int, Dat
                 throw new JsonException();
             }
 
-            int propertyName = reader.GetInt32();
+            int propertyName = int.Parse(reader.GetString());
 
             reader.Read();
-            DateTime dateTime = reader.GetDateTime();
+            DateTime dateTime = DateTime.UnixEpoch.AddSeconds(reader.GetInt32());
 
             // Add to dictionary.
             dictionary.Add(propertyName, dateTime);
