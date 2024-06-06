@@ -14,8 +14,8 @@
         <RepositoryType>git</RepositoryType>
         <Copyright>Copyright (c) YuumiPie 2024-2024</Copyright>
         <PackageTags>TornCity Wrapper</PackageTags>
-        <Version>1.1.1</Version>
-        <PackageReleaseNotes>Fixed unix time converter</PackageReleaseNotes>
+        <Version>1.1.2</Version>
+        <PackageReleaseNotes>Fixed dictionary unix time converter</PackageReleaseNotes>
     </PropertyGroup>
 
     <ItemGroup>
